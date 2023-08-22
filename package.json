@@ -1,5 +1,5 @@
 {
-  "name": "@seajay/mern-starter",
+  "name": "@seajaytanedo/mern-starter",
   "version": "1.0.0",
   "description": "",
   "bin": "./bin/cli/js", 

@@ -13,7 +13,7 @@ const runCommand = command =>{
 }
 
 const  repoName = process.argv[2];
-const gitCheckOutCommand = `git clone --depth 1 https://github.com/TanedoChristian/codesphere.git ${repoName}`;
+const gitCheckOutCommand = `git clone --depth 1 https://github.com/TanedoChristian/mern-starter.git ${repoName}`;
 
 const installDepsCommand = `cd ${repoName} && npm install`;
 
