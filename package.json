@@ -1,13 +1,16 @@
 {
   "name": "@seajaytanedo/mern-starter",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
-  "bin": "bin/cli.js", 
+  "bin": "bin/cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@seajaytanedo/mern-starter": "^1.0.10",
+    "test": "^3.3.0"
+  }
 }
