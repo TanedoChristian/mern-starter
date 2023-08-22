@@ -14,8 +14,8 @@ const runCommand = command =>{
 
 const  repoName = process.argv[2];
 const gitCheckOutCommand = `git clone --depth 1 https://github.com/TanedoChristian/mern-starter.git ${repoName}`;
-const installClient = `cd ${repoName}/client && npm install`;
-const installServer = `cd ${repoName}/server && npm install`;
+
+
 
 console.log(`Creating new project ${repoName}...`);
 const checkOut = runCommand(gitCheckOutCommand);
@@ -24,21 +24,6 @@ if(!checkOut){
     process.exit(1);
 }
 
-console.log(`Installing dependencies...`);
-
-const installedClient = runCommand(installClient);
-if(!installClient){
-    console.log('Failed to install dependencies.');
-    process.exit(1);
-}
-
-const installedServer = runCommand(installServer);
-if(!installServer){
-    console.log('Failed to install dependencies.');
-    process.exit(1);
-}
 
 
 console.log('Happy Coding!');
-console.log(`cd ${repoName}/client && npm run start`)
-console.log(`cd ${repoName}/ && npm run start`)
