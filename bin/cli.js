@@ -15,6 +15,17 @@ const runCommand = command =>{
 }
 
 
+const runCheckOut = command =>{
+    try{
+       console.info(`Initializing project...`)
+    }catch(error){
+        console.error(`Failed to execute command: ${command}`);
+        return false;
+    }
+    return true;
+}
+
+
 
 
 const repoName = process.argv[2];
@@ -27,11 +38,13 @@ const installServer = `cd ${repoName}/server && npm install`;
 
 
 
-const checkOut = runCommand(gitCheckOutCommand);
+const checkOut = runCheckOut(gitCheckOutCommand);
 if(!checkOut){
     console.log('Failed to checkout repository.');
     process.exit(1);
 }
+
+
 
 
 
