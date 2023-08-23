@@ -14,7 +14,6 @@ const runCommand = (command, flag) =>{
             console.error(`Failed to execute command: ${command}`);
             return false;
         }
-        return true;
     } else {
         try{
             execSync(`${command}`, {stdio: 'inherit'});
