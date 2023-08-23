@@ -20,7 +20,7 @@ const installClient = `cd ${repoName}/client && npm install`;
 const installServer = `cd ${repoName}/server && npm install`;
 
 
-console.log('\x1b[34m', `Creating new project ${repoName}...`);
+console.log(`Creating new project ${repoName}...`);
 const checkOut = runCommand(gitCheckOutCommand);
 if(!checkOut){
     console.log('Failed to create new project.');
@@ -43,4 +43,4 @@ if(!installedServer){
 }
 
 
-console.log( '\x1b[34m', 'Happy Coding!');
+console.info('Happy Coding!');
