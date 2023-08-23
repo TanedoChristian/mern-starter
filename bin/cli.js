@@ -12,7 +12,7 @@ const runCommand = command =>{
     return true;
 }
 
-const  repoName = prompt('Enter project name: ');
+const  repoName = process.argv[2];
 const gitCheckOutCommand = `git clone --depth 1 https://github.com/TanedoChristian/mern-starter.git ${repoName}`;
 
 
@@ -34,6 +34,7 @@ if(!installedClient){
     console.log('Failed to install client dependencies.');
     process.exit(1);
 }
+
 console.info(`Installing server dependencies...`)
 const installedServer = runCommand(installServer);
 if(!installedServer){
