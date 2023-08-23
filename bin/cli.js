@@ -2,6 +2,11 @@
 
 const {execSync} = require('child_process');
 
+
+const readline = require('readline');
+
+
+
 const runCommand = command =>{
     try{
         execSync(`${command}`, {stdio: 'inherit'});
@@ -12,7 +17,17 @@ const runCommand = command =>{
     return true;
 }
 
-const  repoName = process.argv[2];
+
+var repoName;
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+
+
+
+const repoName = process.argv[2];
 const gitCheckOutCommand = `git clone --depth 1 https://github.com/TanedoChristian/mern-starter.git ${repoName}`;
 
 
