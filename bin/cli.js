@@ -25,12 +25,6 @@ const installClient = `cd ${repoName}/client && npm install`;
 const installServer = `cd ${repoName}/server && npm install`;
 
 
-console.log(`Creating new project ${repoName}...`);
-const checkOut = runCommand(gitCheckOutCommand);
-if(!checkOut){
-    console.log('Failed to create new project.');
-    process.exit(1);
-}
 
 
 console.info(`Installing client dependencies...`)
