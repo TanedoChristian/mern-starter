@@ -3,9 +3,6 @@
 const {execSync} = require('child_process');
 
 
-const readline = require('readline');
-
-
 
 const runCommand = command =>{
     try{
@@ -16,13 +13,6 @@ const runCommand = command =>{
     }
     return true;
 }
-
-
-var repoName;
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
 
 
 
