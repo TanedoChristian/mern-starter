@@ -28,7 +28,7 @@ const installServer = `cd ${repoName}/server && npm install`;
 
 
 const checkOut = runCommand(gitCheckOutCommand);
-if(!installedClient){
+if(!checkOut){
     console.log('Failed to checkout repository.');
     process.exit(1);
 }
