@@ -1,6 +1,6 @@
 {
   "name": "@seajaytanedo/mern-starter",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "",
   "bin": {
     "mern-starter": "bin/cli.js"
